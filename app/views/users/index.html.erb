@@ -1,2 +1,19 @@
-<h1>Users#index</h1>
-<p>Find me in app/views/users/index.html.erb</p>
+ <div class="container">
+  <input type="text" class="input-search" placeholder="Search for names..">
+
+  <table class="table">
+    <tr>
+      <th>Id</th>
+      <th>Email</th>
+      <th>Name</th>
+    </tr>
+    
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.id %></td>
+        <td><%= user.email %></td>
+        <td><%= user.name %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>

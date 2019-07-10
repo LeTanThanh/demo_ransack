@@ -17,6 +17,7 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "ffaker"
 gem "jquery-rails"
 gem "bootstrap-sass"
+gem "ransack"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]

@@ -39,10 +39,10 @@
 
   <table class="table">
     <tr>
-      <th>Id</th>
-      <th>Email</th>
-      <th>Name</th>
-      <th>Article title</th>
+      <th><%= sort_link(@q, :id, "Id") %></th>
+      <th><%= sort_link(@q, :email, "Email") %></th>
+      <th><%= sort_link(@q, :name, "Name") %></th>
+      <th><%= sort_link(@q, :articles_title, "Articles title") %></th>
     </tr>
     
     <% @users.each do |user| %>
@@ -57,7 +57,7 @@
         <td></td>
         <td></td>
         <td></td>
-        <td><%= article.title %></td>
+        <td><%= article.id %> <%= article.title %></td>
       <tr>
       <% end %>    
     <% end %>
